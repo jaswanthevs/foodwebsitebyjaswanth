@@ -10,51 +10,123 @@
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="Food Treasure Logo" class="logo">
-        <h1>Food Treasure</h1>
-        <p class="tagline">For Food Lovers</p>
+        <img src="peoplestastelogo.png" alt="Food Treasure Logo" class="logo">
+        <h1>People's Taste</h1>
+        <p class="tagline">Discover the Best Bites, Loved by Locals</p>
     </header>
 
     <section class="about">
-        <h2>About Food Treasure</h2>
-        <p>Welcome to <strong>Food Treasure</strong>, your guide to the best food across different cities. Select a city, choose an area, and discover the top restaurants and dishes, complete with images and location details.</p>
+        <h2>About PEOPLE'S Taste</h2>
+        <p>Welcome to <strong>PEOPLE'S Taste</strong>, your guide to the best food across different cities. Select a city, choose an area, and discover the top restaurants and dishes, complete with images and location details.</p>
     </section>
 
     <section class="about-me">
         <h2>About Me</h2>
-        <p>Hi! I'm [Your Name], a food enthusiast and blogger who loves to explore new flavors and culinary experiences. Join me on my journey to discover the best dishes and hidden gems in the food world!</p>
+        <p>Hi! I'm <strong>Jaswanth Edupuganti</strong> , a food enthusiast and blogger who loves to explore new flavors and culinary experiences. Join me on my journey to discover the best dishes and hidden gems in the food world!</p>
     </section>
 
     <section class="city-area-food">
-        <h2>Select Your City</h2>
+        <h2>Select Your location</h2>
         <div class="city-list">
-            <button class="city-btn" onclick="showAreas('nyc')">New York</button>
-            <button class="city-btn" onclick="showAreas('la')">Los Angeles</button>
-            <button class="city-btn" onclick="showAreas('chi')">Chicago</button>
+            <button class="city-btn" onclick="showAreas('hyd')">Hyderabad</button>
+            <button class="city-btn" onclick="showAreas('bmvrm')">Bhimavaram</button>
+            <button class="city-btn" onclick="showAreas('rjy')">Rajamahendravaram</button>
         </div>
 
-        <div id="nyc" class="area-list" style="display:none;">
-            <h3>Areas in New York</h3>
-            <button class="area-btn" onclick="showRestaurants('nyc-manhattan')">Manhattan</button>
-            <button class="area-btn" onclick="showRestaurants('nyc-brooklyn')">Brooklyn</button>
+        <div id="hyd" class="area-list" style="display:none;">
+            <h3>Areas in Hyderabad</h3>
+            <button class="area-btn" onclick="showRestaurants('nyc-Kondapur')">Kondapur</button>
+            <button class="area-btn" onclick="showRestaurants('nyc-KPHB')">KPHB</button>
+            <button class="area-btn" onclick="showRestaurants('nyc-Financial District')">Financial District</button>
+            <button class="area-btn" onclick="showRestaurants('nyc-Lakdikapul')">Lakdikapul</button>
+            <button class="area-btn" onclick="showRestaurants('nyc-Kachiguda')">Kachiguda</button>
+            <button class="area-btn" onclick="showRestaurants('nyc-Mehdipatnam')">Mehdipatnam</button>
+            <button class="area-btn" onclick="showRestaurants('nyc-Ameerpet')">Ameerpet</button>
+            <button class="area-btn" onclick="showRestaurants('nyc-HITEC City')">HITEC City</button>
+            <button class="area-btn" onclick="showRestaurants('nyc-Film Nagar')">Film Nagar</button>
+            <button class="area-btn" onclick="showRestaurants('nyc-Madhapur')">Madhapur</button>
+            <button class="area-btn" onclick="showRestaurants('nyc-Yousufguda Krishna Nagar')">Yousufguda (Krishna Nagar )</button>
+            <button class="area-btn" onclick="showRestaurants('nyc-Secunderabad  near ECIL')">Secunderabad ( near ECIL)</button>
+            <button class="area-btn" onclick="showRestaurants('nyc-Punjagutta')">Punjagutta</button>
+            <button class="area-btn" onclick="showRestaurants('nyc-Kukatpally')">Kukatpally</button>
+            <button class="area-btn" onclick="showRestaurants('nyc-Jubilee Hills')">Jubilee Hills</button>
+
+
+
         </div>
 
-        <div id="la" class="area-list" style="display:none;">
-            <h3>Areas in Los Angeles</h3>
-            <button class="area-btn" onclick="showRestaurants('la-hollywood')">Hollywood</button>
-            <button class="area-btn" onclick="showRestaurants('la-santamonica')">Santa Monica</button>
+        <div id="bmvrm" class="area-list" style="display:none;">
+            <h3>Areas in Bhimavaram</h3>
+            <button class="area-btn" onclick="showRestaurants('la-nsrkr')">near to srkr college</button>
+            <button class="area-btn" onclick="showRestaurants('la-nvishnu')">near to vishnu college</button>
         </div>
 
-        <div id="chi" class="area-list" style="display:none;">
+        <div id="rjy" class="area-list" style="display:none;">
             <h3>Areas in Chicago</h3>
-            <button class="area-btn" onclick="showRestaurants('chi-downtown')">Downtown</button>
-            <button class="area-btn" onclick="showRestaurants('chi-lincolnpark')">Lincoln Park</button>
+            <button class="area-btn" onclick="showRestaurants('chi-mainroad')">main road</button>
+            <button class="area-btn" onclick="showRestaurants('chi-Danavaipeta')">Danavaipeta</button>
+            <button class="area-btn" onclick="showRestaurants('chi-Prakash Nagar')">Prakash Nagar</button>
+
         </div>
 
         <section id="restaurant-display" style="display:none;">
             <h2>Restaurants and Dishes</h2>
 
-            <div id="nyc-manhattan" class="restaurant-list" style="display:none;">
+            <div id="nyc-Kondapur" class="restaurant-list" style="display:none;">
+                <h3>Burgers</h3>
+                <div class="restaurant">
+                    <h4>Udipi's Upahar Kondapur</h4>
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipOTJZwo-0xownt-XSU_iJHLzQKEQx4OMY1ksPPb=s1360-w1360-h1020" alt="Juicy Burger">
+                    <p><strong>Dish:</strong> Ghee Idly</p>
+                    <p><strong>Address:</strong> Hanuman Nagar, Silpa Park, Hafeezpet, Kondapur</p>
+                    <div class="rating" data-rating="0">
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                        <span class="average-rating">Rating: <span class="average">0</span></span>
+                    </div>
+                    <a href="https://maps.app.goo.gl/xKm6RQfhCdJAibKE6" target="_blank">View on Google Maps</a>
+                    <h4>Best Menu</h4>
+                    <img src="https://b.zmtcdn.com/data/menus/943/90943/6632e61056b376325b550768b1b6fcc8.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="Menu Card" class="menu-card">
+                    <p>Check out our best menu items!</p>
+
+                    <h4>Reviews</h4>
+                    <div class="review-section">
+                        <textarea placeholder="Leave a review..." rows="3"></textarea>
+                        <button class="submit-review">Submit</button>
+                        <div class="reviews-display"></div>
+                    </div>
+                </div>
+
+                <h3>Pizzas</h3>
+                <div class="restaurant">
+                    <h4>Midtown Pies</h4>
+                    <img src="images/pizza.jpg" alt="Pepperoni Pizza">
+                    <p><strong>Dish:</strong> Pepperoni Pizza</p>
+                    <p><strong>Address:</strong> 456 Broadway, Manhattan</p>
+                    <div class="rating" data-rating="0">
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                        <span class="average-rating">Rating: <span class="average">0</span></span>
+                    </div>
+                    <a href="https://goo.gl/maps/example" target="_blank">View on Google Maps</a>
+                    <h4>Reviews</h4>
+                    <div class="review-section">
+                        <textarea placeholder="Leave a review..." rows="3"></textarea>
+                        <button class="submit-review">Submit</button>
+                        <div class="reviews-display"></div>
+                    </div>
+                </div>
+            </div>
+           
+            
+                
+            <div id="nyc-KPHB" class="restaurant-list" style="display:none;">
                 <h3>Burgers</h3>
                 <div class="restaurant">
                     <h4>Burger Paradise</h4>
@@ -100,14 +172,297 @@
                 </div>
             </div>
 
+            
+            
+            <div id="nyc-Financial District" class="restaurant-list" style="display:none;">
+                <h3>birayani</h3>
+                <div class="restaurant">
+                    <h4>Burger Paradise</h4>
+                    <img src="images/burger.jpg" alt="Juicy Burger">
+                    <p><strong>Dish:</strong> sai </p>
+                    <p><strong>Address:</strong> 123 Main St, Manhattan</p>
+                    <div class="rating" data-rating="0">
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                        <span class="average-rating">Rating: <span class="average">0</span></span>
+                    </div>
+                    <a href="https://www.google.com/maps/place/Burger+Paradise" target="_blank">View on Google Maps</a>
+                    <h4>Best Menu</h4>
+                    <img src="images/menu-fast-bites.jpg" alt="Menu Card" class="menu-card">
+                    <p>Check out our best menu items!</p>
+
+                    <h4>Reviews</h4>
+                    <div class="review-section">
+                        <textarea placeholder="Leave a review..." rows="3"></textarea>
+                        <button class="submit-review">Submit</button>
+                        <div class="reviews-display"></div>
+                    </div>
+                </div>
+
+                <h3>Pizzas</h3>
+                <div class="restaurant">
+                    <h4>Midtown Pies</h4>
+                    <img src="images/pizza.jpg" alt="Pepperoni Pizza">
+                    <p><strong>Dish:</strong> Pepperoni Pizza</p>
+                    <p><strong>Address:</strong> 456 Broadway, Manhattan</p>
+                    <div class="rating" data-rating="0">
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                        <span class="average-rating">Rating: <span class="average">0</span></span>
+                    </div>
+                    <a href="https://goo.gl/maps/example" target="_blank">View on Google Maps</a>
+                </div>
+            </div>
+            
+            <div id="nyc-Lakdikapul" class="restaurant-list" style="display:none;">
+                <h3>Burgers</h3>
+                <div class="restaurant">
+                    <h4>Burger Paradise</h4>
+                    <img src="images/burger.jpg" alt="Juicy Burger">
+                    <p><strong>Dish:</strong> Juicy Burger</p>
+                    <p><strong>Address:</strong> 123 Main St, Manhattan</p>
+                    <div class="rating" data-rating="0">
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                        <span class="average-rating">Rating: <span class="average">0</span></span>
+                    </div>
+                    <a href="https://www.google.com/maps/place/Burger+Paradise" target="_blank">View on Google Maps</a>
+                    <h4>Best Menu</h4>
+                    <img src="images/menu-fast-bites.jpg" alt="Menu Card" class="menu-card">
+                    <p>Check out our best menu items!</p>
+
+                    <h4>Reviews</h4>
+                    <div class="review-section">
+                        <textarea placeholder="Leave a review..." rows="3"></textarea>
+                        <button class="submit-review">Submit</button>
+                        <div class="reviews-display"></div>
+                    </div>
+                </div>
+
+                <h3>Pizzas</h3>
+                <div class="restaurant">
+                    <h4>Midtown Pies</h4>
+                    <img src="images/pizza.jpg" alt="Pepperoni Pizza">
+                    <p><strong>Dish:</strong> Pepperoni Pizza</p>
+                    <p><strong>Address:</strong> 456 Broadway, Manhattan</p>
+                    <div class="rating" data-rating="0">
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                        <span class="average-rating">Rating: <span class="average">0</span></span>
+                    </div>
+                    <a href="https://goo.gl/maps/example" target="_blank">View on Google Maps</a>
+                </div>
+            </div>
+            
+            <div id="nyc-Mehdipatnam" class="restaurant-list" style="display:none;">
+                <h3>Burgers</h3>
+                <div class="restaurant">
+                    <h4>Mehdipatnam hotall</h4>
+                    <img src="images/burger.jpg" alt="Juicy Burger">
+                    <p><strong>Dish:</strong> Juicy Burger</p>
+                    <p><strong>Address:</strong> 123 Main St, Manhattan</p>
+                    <div class="rating" data-rating="0">
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                        <span class="average-rating">Rating: <span class="average">0</span></span>
+                    </div>
+                    <a href="https://www.google.com/maps/place/Burger+Paradise" target="_blank">View on Google Maps</a>
+                    <h4>Best Menu</h4>
+                    <img src="images/menu-fast-bites.jpg" alt="Menu Card" class="menu-card">
+                    <p>Check out our best menu items!</p>
+
+                    <h4>Reviews</h4>
+                    <div class="review-section">
+                        <textarea placeholder="Leave a review..." rows="3"></textarea>
+                        <button class="submit-review">Submit</button>
+                        <div class="reviews-display"></div>
+                    </div>
+                </div>
+
+                <h3>Pizzas</h3>
+                <div class="restaurant">
+                    <h4>Midtown Pies</h4>
+                    <img src="images/pizza.jpg" alt="Pepperoni Pizza">
+                    <p><strong>Dish:</strong> Pepperoni Pizza</p>
+                    <p><strong>Address:</strong> 456 Broadway, Manhattan</p>
+                    <div class="rating" data-rating="0">
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                        <span class="average-rating">Rating: <span class="average">0</span></span>
+                    </div>
+                    <a href="https://goo.gl/maps/example" target="_blank">View on Google Maps</a>
+                </div>
+            </div>
+        
+        <div id="nyc-Ameerpet" class="restaurant-list" style="display:none;">
+            <h3>Burgers</h3>
+            <div class="restaurant">
+                <h4>ameerpet Paradise</h4>
+                <img src="images/burger.jpg" alt="Juicy Burger">
+                <p><strong>Dish:</strong> Juicy Burger</p>
+                <p><strong>Address:</strong> 123 Main St, Manhattan</p>
+                <div class="rating" data-rating="0">
+                    <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                    <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                    <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                    <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                    <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                    <span class="average-rating">Rating: <span class="average">0</span></span>
+                </div>
+                <a href="https://www.google.com/maps/place/Burger+Paradise" target="_blank">View on Google Maps</a>
+                <h4>Best Menu</h4>
+                <img src="images/menu-fast-bites.jpg" alt="Menu Card" class="menu-card">
+                <p>Check out our best menu items!</p>
+
+                <h4>Reviews</h4>
+                <div class="review-section">
+                    <textarea placeholder="Leave a review..." rows="3"></textarea>
+                    <button class="submit-review">Submit</button>
+                    <div class="reviews-display"></div>
+                </div>
+            </div>
+
+            <h3>Pizzas</h3>
+            <div class="restaurant">
+                <h4>Midtown Pies</h4>
+                <img src="images/pizza.jpg" alt="Pepperoni Pizza">
+                <p><strong>Dish:</strong> Pepperoni Pizza</p>
+                <p><strong>Address:</strong> 456 Broadway, Manhattan</p>
+                <div class="rating" data-rating="0">
+                    <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                    <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                    <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                    <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                    <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                    <span class="average-rating">Rating: <span class="average">0</span></span>
+                </div>
+                <a href="https://goo.gl/maps/example" target="_blank">View on Google Maps</a>
+            </div>
+        </div>
+        
+
+        <div id="nyc-HITEC City" class="restaurant-list" style="display:none;">
+            <h3>Burgers</h3>
+            <div class="restaurant">
+                <h4> hitech Burger Paradise</h4>
+                <img src="images/burger.jpg" alt="Juicy Burger">
+                <p><strong>Dish:</strong> Juicy Burger</p>
+                <p><strong>Address:</strong> 123 Main St, Manhattan</p>
+                <div class="rating" data-rating="0">
+                    <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                    <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                    <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                    <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                    <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                    <span class="average-rating">Rating: <span class="average">0</span></span>
+                </div>
+                <a href="https://www.google.com/maps/place/Burger+Paradise" target="_blank">View on Google Maps</a>
+                <h4>Best Menu</h4>
+                <img src="images/menu-fast-bites.jpg" alt="Menu Card" class="menu-card">
+                <p>Check out our best menu items!</p>
+
+                <h4>Reviews</h4>
+                <div class="review-section">
+                    <textarea placeholder="Leave a review..." rows="3"></textarea>
+                    <button class="submit-review">Submit</button>
+                    <div class="reviews-display"></div>
+                </div>
+            </div>
+
+            <h3>Pizzas</h3>
+            <div class="restaurant">
+                <h4>Midtown Pies</h4>
+                <img src="images/pizza.jpg" alt="Pepperoni Pizza">
+                <p><strong>Dish:</strong> Pepperoni Pizza</p>
+                <p><strong>Address:</strong> 456 Broadway, Manhattan</p>
+                <div class="rating" data-rating="0">
+                    <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                    <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                    <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                    <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                    <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                    <span class="average-rating">Rating: <span class="average">0</span></span>
+                </div>
+                <a href="https://goo.gl/maps/example" target="_blank">View on Google Maps</a>
+            </div>
+        </div>
+        //Yousufguda Krishna Nagar//
+        <section id="restaurant-display" style="display:none;">
+            <h2>Restaurants and Dishes in Yousufguda Krishna Nagar</h2>
+        <div id="nyc-Ameerpet" class="restaurant-list" style="display:none;">
+            <h3>Burgers</h3>
+            <div class="restaurant">
+                <h4>Burger Paradise</h4>
+                <img src="images/burger.jpg" alt="Juicy Burger">
+                <p><strong>Dish:</strong> Juicy Burger</p>
+                <p><strong>Address:</strong> 123 Main St, Manhattan</p>
+                <div class="rating" data-rating="0">
+                    <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                    <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                    <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                    <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                    <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                    <span class="average-rating">Rating: <span class="average">0</span></span>
+                </div>
+                <a href="https://www.google.com/maps/place/Burger+Paradise" target="_blank">View on Google Maps</a>
+                <h4>Best Menu</h4>
+                <img src="images/menu-fast-bites.jpg" alt="Menu Card" class="menu-card">
+                <p>Check out our best menu items!</p>
+
+                <h4>Reviews</h4>
+                <div class="review-section">
+                    <textarea placeholder="Leave a review..." rows="3"></textarea>
+                    <button class="submit-review">Submit</button>
+                    <div class="reviews-display"></div>
+                </div>
+            </div>
+
+            <h3>Pizzas</h3>
+            <div class="restaurant">
+                <h4>Midtown Pies</h4>
+                <img src="images/pizza.jpg" alt="Pepperoni Pizza">
+                <p><strong>Dish:</strong> Pepperoni Pizza</p>
+                <p><strong>Address:</strong> 456 Broadway, Manhattan</p>
+                <div class="rating" data-rating="0">
+                    <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                    <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                    <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                    <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                    <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                    <span class="average-rating">Rating: <span class="average">0</span></span>
+                </div>
+                <a href="https://goo.gl/maps/example" target="_blank">View on Google Maps</a>
+            </div>
+        </div>
+
+
+        
             <!-- Additional areas can be added similarly -->
         </section>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Food Treasure. All rights reserved.</p>
-    </footer>
-
-
+   
+ 
 </body>
+<footer>
+    <p>&copy; 2024 Food Treasure. All rights reserved.</p>
+</footer>
 </html>
