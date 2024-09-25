@@ -1,28 +1,32 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-image: url('https://images.pexels.com/photos/3167412/pexels-photo-3167412.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Replace with your image path */
-    background-size: cover; /* Makes the image cover the whole background */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    color: #333;
+    background: linear-gradient(to right, #FFA004, #FF8709); /* From orange to light yellow */
     margin: 0;
-    padding: 0;
-}
+    font-family: 'Nunito', sans-serif;
+    height: 100vh;
+   
+    justify-content: center;
+    align-items: center;
+  }
 
 /* Logo Styling */
 .logo {
     width: 150px;
-    margin: 20px auto;
+    margin: 5px auto;   
     display: block;
+    width: 40%;  /* Image takes full width of its container */
+    height: auto; /* Keeps the aspect ratio intact */
+    max-width: 300px;
+    
 }
 
 /* Header */
 header {
     text-align: center;
-    background-color: #ff6f61;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
     padding: 30px 20px;
-    color: white;
-    border-bottom: 4px solid #ff5722;
+    color:#ff8709;
+    border-bottom: 4px solid #ff8709;
 }
 
 .tagline {
@@ -41,7 +45,7 @@ header {
 }
 
 .about h2, .about-me h2 {
-    color: #ff5722;
+    color: #ff8709;
 }
 
 .about p, .about-me p {
@@ -57,7 +61,7 @@ header {
     justify-content: center;
     margin: 30px auto;
     padding: 20px;
-    border: 2px solid #ff6f61;
+    border: 2px solid #ff8709;
     border-radius: 12px;
     max-width: 800px;
     background-color: #fff;
@@ -73,7 +77,7 @@ header {
 
 /* Buttons for cities and areas */
 .city-btn, .area-btn {
-    background-color: #ff5722;
+    background-color: #ff8709;
     color: white;
     padding: 12px 25px;
     margin: 10px;
@@ -86,7 +90,7 @@ header {
 }
 
 .city-btn:hover, .area-btn:hover {
-    background-color: #ff6f61;
+    background-color: #ff8709;
     transform: scale(1.05);
 }
 
@@ -109,12 +113,12 @@ header {
 .restaurant img {
     width: 100%;
     border-radius: 10px;
-    border: 3px solid #ff5722;
+    border: 3px solid #ff8709;
 }
 
 .restaurant h4 {
     font-size: 1.5rem;
-    color: #ff5722;
+    color: #ff8709;
     margin: 10px 0;
 }
 
@@ -133,7 +137,7 @@ header {
 .star {
     font-size: 1.5rem;
     cursor: pointer;
-    color: #ff5722;
+    color: #ff8709;
 }
 
 .average-rating {
@@ -163,7 +167,7 @@ header {
 }
 
 .review-section .submit-review {
-    background-color: #ff5722;
+    background-color: #ff8709;
     color: white;
     padding: 10px;
     border: none;
@@ -173,7 +177,7 @@ header {
 }
 
 .review-section .submit-review:hover {
-    background-color: #e64a19;
+    background-color: #ff8709;
 }
 
 /* Reviews Display */
@@ -186,7 +190,7 @@ header {
 /* Review Item Styling */
 .review-item {
     background-color: #f9f9f9;
-    border-left: 5px solid #ff5722;
+    border-left: 5px solid #ff8709;
     padding: 10px;
     margin-top: 5px;
     border-radius: 5px;
